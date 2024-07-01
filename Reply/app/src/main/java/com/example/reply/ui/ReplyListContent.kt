@@ -35,7 +35,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeFloatingActionButton
 import androidx.compose.material3.MaterialTheme
@@ -57,7 +56,6 @@ import com.example.reply.ui.utils.ReplyNavigationType
 import com.google.accompanist.adaptive.HorizontalTwoPaneStrategy
 import com.google.accompanist.adaptive.TwoPane
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ReplyInboxScreen(
     contentType: ReplyContentType,
@@ -125,7 +123,7 @@ fun ReplyInboxScreen(
                 ) {
                     Icon(
                         imageVector = Icons.Default.Edit,
-                        contentDescription = stringResource(id = R.string.edit),
+                        contentDescription = stringResource(id = R.string.compose),
                         modifier = Modifier.size(28.dp)
                     )
                 }
